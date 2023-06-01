@@ -1,4 +1,13 @@
-
+'''
+------------------------------------------------------------------------------------------------------------------------
+This workflow is used to run HybPiper on GenomeDK to investigate the paralogs in Ceroxyloids 
+------------------------------------------------------------------------------------------------------------------------
+This code is a variant of species_workflow.py by Oscar Wrisberg
+Edited by Paola de Lima Ferreira 14/07/2022
+------------------------------------------------------------------------------------------------------------------------
+Eddited by Kristine Nørtoft Kristensen 
+------------------------------------------------------------------------------------------------------------------------
+'''
 from os import O_SYNC, name  
 from gwf import Workflow
 import os.path   
@@ -608,16 +617,16 @@ for i in range(0, len(sp)):
 
 
 ## Generating stats
-#gwf.target_from_template('stats', stats(path_in = "/home/kris/bp_ceroxyloideae/hybpiper/"))
+gwf.target_from_template('stats', stats(path_in = "/home/kris/bp_ceroxyloideae/hybpiper/"))
 
 
 
 ## Generating Heatmap
-#gwf.target_from_template('heatmap', heatmap(path_in = "/home/kris/bp_ceroxyloideae/stats/"))
+gwf.target_from_template('heatmap', heatmap(path_in = "/home/kris/bp_ceroxyloideae/stats/"))
 
 
 ## Generating Paralogs 2
-#gwf.target_from_template('paralogs2', paralogs2(path_in = "/home/kris/bp_ceroxyloideae/hybpiper/"))
+gwf.target_from_template('paralogs2', paralogs2(path_in = "/home/kris/bp_ceroxyloideae/hybpiper/"))
 
 
 
@@ -664,7 +673,7 @@ for i in range(len(genes)):
                                                         done = "/home/kris/bp_ceroxyloideae/done_trimal/"+genes[i]))
 
 ### AMAS statistics
-#gwf.target_from_template('amas_raw', amas_raw(path_in="/home/kris/bp_ceroxyloideae/trimal/"))
+gwf.target_from_template('amas_raw', amas_raw(path_in="/home/kris/bp_ceroxyloideae/trimal/"))
 
 
 
