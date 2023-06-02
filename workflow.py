@@ -236,7 +236,7 @@ def gt_trimming(path_in,done,genes):
     options = {'cores': 1, 'memory': "20g", 'walltime': "12:00:00", 'account':"bp_ceroxyloideae"}
 
     spec="""
-    #Activating my_env
+    #Activating enviroment
     source /home/kris/miniconda3/etc/profile.d/conda.sh
     conda activate trimal
 
@@ -289,7 +289,7 @@ def amas_raw(path_in):
 
     spec="""
 
-    #Activating trimal_env
+    #Activating enviroment
     source /home/kris/miniconda3/etc/profile.d/conda.sh
     conda activate amas
     
@@ -302,7 +302,7 @@ def amas_raw(path_in):
     return(inputs, outputs, options, spec)
 
 
-#Hereafter you need to do some manual work and remove the headlines statistics.
+#Hereafter you need to do some manual work and ad headlines statistics from one of the gene samples to the summary files.
 
 
     
