@@ -5,7 +5,7 @@ This workflow is used to run HybPiper on GenomeDK to investigate the paralogs in
 This code is a variant of species_workflow.py by Oscar Wrisberg
 Edited by Paola de Lima Ferreira 14/07/2022
 ------------------------------------------------------------------------------------------------------------------------
-Eddited by Kristine Nørtoft Kristensen 
+Edited by Kristine Nørtoft Kristensen 
 ------------------------------------------------------------------------------------------------------------------------
 '''
 from os import O_SYNC, name  
