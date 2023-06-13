@@ -196,7 +196,7 @@ def retrieve2(path_in):
 
 # Here go to folder 6.Retrieve and ls -1
 # Get the gene names and write them in genes = []
-# We found 3467 genes for Ceroxyloids using the Arecoideae target file.
+# I found 968 genes for Ceroxyloideae
 
 def mafft(genes, path_in, path_out, done):
     """Aligning all the sequences for each gene."""
