@@ -14,6 +14,9 @@ Scripts for inferring a species tree for Ceroxyloideae with paralogs
     - TAPER Version 1.0.0 (Zhang et al., 2021) 
     - IQtree multicore version 2.2.2.3 (Minh et al., 2020) with ModelFinder Plus (Kalyaanamoorthy et al., 2017) 
     - ASTRAL-III version 5.7.8 (Zhang et al., 2018) 
+    - Phytools 1.5-1 (Revell, 2012)
+    
+  
  
  
  
